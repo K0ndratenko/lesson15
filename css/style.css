@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
@@ -34,12 +34,387 @@ img {
 html,
 body {
   height: 100%;
-}
-html {
-  font-family: 'Roboto', sans-serif;
-}
-body {
   line-height: 1;
 }
+html {
+  font-family: "Roboto", sans-serif;
+}
 
+[class*="__container-width1020"] {
+  max-width: 1020px;
+  margin: 0 auto;
+}
 
+[class*="__container-width1440"] {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+}
+
+.who-we-are__container-width1020_blue {
+  margin-top: 205px;
+  background: #5d62b5;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 87px;
+
+  position: relative;
+  min-height: 700px;
+  margin-bottom: 229px;
+}
+.who-we-are__container-width1020_blue::before {
+  content: url(../img/who_we_are/Stylize\ Circles.png);
+  position: absolute;
+  top: -109px;
+  right: -76px;
+}
+.who-we-are__container-width1020_blue::after {
+  content: url(../img/who_we_are/background_item.png);
+  position: absolute;
+  left: -15px;
+  bottom: -150px;
+}
+.sub-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 2.5px;
+
+  text-transform: uppercase;
+  max-width: 450px;
+
+  padding-left: 33px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 117%;
+
+  max-width: 583px;
+}
+
+.who-we-are {
+}
+
+.who-we-are__sub-title {
+  padding-top: 100px;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+  background: url("../img/who_we_are/icon.svg") bottom -1px left / auto auto no-repeat;
+}
+.who-we-are__title {
+  margin-bottom: 36px;
+  color: #fff;
+}
+
+.who-we-are__text {
+  max-width: 846px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+  color: #f5f5f5;
+  padding-bottom: 54px;
+}
+.who-we-are__img {
+  max-width: 846px;
+  max-height: 420px;
+  border-radius: 40px;
+  margin-bottom: -120px;
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+  position: relative;
+  z-index: 3;
+}
+
+.our-promice {
+}
+.our-promice__container-width1020 {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-promice__sub-title {
+  color: #5d62b5;
+  background: url("../img/our-promice/icon.svg") bottom -1px left / auto auto no-repeat;
+  margin-bottom: 30px;
+}
+
+.our-promice__title {
+  color: #000;
+  margin-bottom: 68px;
+}
+.our-promice__desc-items {
+  display: flex;
+  margin: 0 -12px;
+  padding: 0 12px;
+  column-gap: 20px;
+  margin-bottom: 126px;
+}
+.items-desc {
+}
+.items-desc__body {
+  display: flex;
+
+  flex: 0 1 33.333%;
+}
+.items-desc__icon {
+  align-self: flex-start;
+  margin-right: 24px;
+}
+.items-desc__text {
+}
+
+.items-desc__item-title {
+  margin-bottom: 23px;
+}
+
+.items-desc__item-desc {
+}
+
+.item-title {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 1.36;
+  color: #f2726f;
+}
+.item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: #4b4b4b;
+}
+
+.make-an-appointment {
+  background-color: #29c3be;
+}
+.make-an-appointment__container-width1440 {
+  min-height: 500px;
+  background-color: #29c3be;
+  /* max-width: 1440px;
+  margin: 0 auto 0 auto ; */
+  background: url("../img/make-an-appointment/tennis-ball.png") top 113px right 46px / auto auto no-repeat,
+    url("../img/make-an-appointment/Line.png") top 0 left 750px / auto auto no-repeat,
+    url("../img/make-an-appointment/spot.png") top -5px left 0 / auto auto no-repeat,
+    #29c3be url("../img/make-an-appointment/Circles.png") top 120px left 0px / auto auto no-repeat;
+  display: flex;
+  column-gap: 76px;
+}
+.make-an-appointment__img {
+  position: relative;
+  top: 27px;
+  left: 2px;
+}
+.make-an-appointment__title {
+  max-width: 411px;
+  margin: 110px 0 45px 0;
+}
+.make-an-appointment__button {
+  min-width: 210px;
+  min-height: 49px;
+}
+.make-an-appointment__text-body {
+  margin-bottom: 159px;
+}
+.button {
+  display: inline-block;
+
+  background-color: #f2726f;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 50%;
+  letter-spacing: 0.15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.our-services {
+  background-color: #f5f5f5;
+}
+.our-services__container-width1020 {
+  padding-top: 103px;
+}
+.our-services__sub-title {
+  color: #5d62b5;
+  background: url("../img/our-services/icon.svg") 0 -2px / auto auto no-repeat;
+  margin-bottom: 33px;
+}
+
+.our-services__title {
+  margin-bottom: 78px;
+}
+
+.cards-block {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+.cards-block__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  min-width: 324px;
+  border-radius: 20px;
+}
+.card:hover {
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+.card__icon {
+  margin-top: 50px;
+  max-width: 63px;
+  max-height: 63px;
+  margin-bottom: 33px;
+}
+.card__title {
+  max-width: 237px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card__text {
+  text-align: center;
+  max-width: 235px;
+  margin-bottom: 50px;
+}
+.our-services__cards-block {
+  margin-bottom: 66px;
+}
+
+.our-services__button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-58%);
+  min-width: 124px;
+  min-height: 48px;
+
+  margin-bottom: 124px;
+}
+
+.appointment {
+}
+.appointment____container-width1440 {
+  background-image: url(../img/appointment/bg-image.png);
+  display: flex;
+  justify-content: center;
+  column-gap: 111px;
+  background: url("../img/appointment/bg-spot.png") top 0px left 0px / auto auto no-repeat,
+    url("../img/appointment/bg-circles.png") top 239px left 100px / auto auto no-repeat,
+    url(../img/appointment/bg-image.png);
+}
+
+.appointment__form-wrapper {
+  max-width: 585px;
+  background-color: #5d62b5;
+  border-radius: 40px;
+  margin: 130px 0px 210px 0px;
+}
+.appointment__form-title {
+  color: #fff;
+  max-width: 470px;
+  text-align: center;
+  padding-top: 76px;
+
+  display: block;
+  margin: 0 auto 48px auto;
+}
+.appointment__form {
+  max-width: 585px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 22px;
+  row-gap: 22px;
+}
+.appointment__form > * {
+  background-color: #5d62b5;
+}
+.appointment__input {
+  flex: 0 1 224px;
+  height: 48px;
+
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #fff;
+}
+
+.appointment__text-area {
+  flex: 0 1 470px;
+  height: 180px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #fff;
+  padding-top: 17px;
+  margin-bottom: 10px;
+  /* Если нажать на текстАреа то input 3 and 4 сдиваются куда то( выскакивает в HTML <lt-toolbar contenteditable="false" data-lt-force-appearance="light" style="display: none;"><lt-div class="lt-toolbar__wrapper" style="left: 1339px; position: absolute !important; top: 583px !important; bottom: auto !important; z-index: auto;"><lt-div class="lt-toolbar__premium-icon"></lt-div><lt-div class="lt-toolbar__status-icon lt-toolbar__status-icon-has-no-errors" title="LanguageTool - Spelling and Grammar Check"></lt-div></lt-div></lt-toolbar> */
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #fff;
+  opacity: 80%;
+}
+.appointment__button {
+  width: 210px;
+  cursor: pointer;
+  background-color: #f2726f;
+  margin-bottom: 76px;
+  padding: 15px 30px 11px 30px;
+  margin-left: 261px;
+  /* Почемуто здесь не работал align-self =((((((((((((( пришлось margin used */
+}
+.appointment__info-body {
+  max-width: 324px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 63px;
+  padding: 296px 0px 0px 0px;
+}
+.appointment__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 120%;
+  color: #fff;
+  text-align: center;
+}
+.appointment__number {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+}
+.appointment__some-text {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+}
